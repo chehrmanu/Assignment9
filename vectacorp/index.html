@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#responsive-menu').mobileMenu();
+		});
+	</script>
+</head>
+<body>
+<!--
+    
+Assignment 9
+Incorporate jQuery Plugins & jQuery UI into the Vecta Corp Web Site.
+In this assignment you’ll practice working with jQuery and jQuery UI. Specifically, you will add
+several jQuery UI components to the Vecta Corp. web site to make it more usable and interactive.
+
+General
+1.Use the jQuery UI Tooltip widget and add more descriptive text to each navigation menu item. For instance, when the user rolls over Solutions it may read “Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers.” Each of the 5 should be unique. Make sure to add this feature to all 5 pages of the Vecta Corp. site.
+-->
+<!--
+    
+Home Page
+        
+2.Add the jQuery UI Tabs widget to the home page to divide up the 3 Vecta Corp solutions into an easy to navigate horizontal tabbed menu. There will be 3 tabs, 1 for each Vecta Corp. solution. When the user clicks a tab, the information (along with the product image) should appear. Add this widget to the are directly underneath the heading: Our Solutions.
+    
+-->
+<!--
+    
+3.Add the jQuery UI Accordion widget to the home page to divide up the 2 client testimonials. Add this widget to the area directly underneath the heading: Client Testimonials.
+-->
+<!--
+    
+About Us
+
+4.Add the jQuery UI Tabs widget to the Management Team section within this page to divide up the 5 Vecta Corp managers into an easy to navigate vertical tabbed menu. There will be 5 tabs, 1 for each Vecta Corp. manager. When the user clicks a tab, the bio for each manager should appear. Add this widget to the area directly underneath the heading: Management Team.
+•	Use the jQuery Cycle2 plugin to create an auto-rotating slideshow for the new Vecta Corp headquarters. Be sure to add some kind of clickable navigation so that the user can cycle between different images. The images to use for this plugin are located in the images folder.
+    
+-->
+<!--
+    
+Solutions
+5.	Add and format the Solutions content within the Our Solutions heading. Add a quick nav that links the user down to the particular section within the page. Use Google to find a StikkyNav plugin so that when the user clicks a solution on the Quick Nav, the Quick Nav stays in plays and doesn’t move. Also, use Google to find a jQuery Back to Top plugin that you can add to this page that allows the user to easily and smoothly navigate back up to the top of the page.
+Contact US
+•	Convert the radio buttons into jQuery UI radio buttons.
+•	Convert the checkboxes into jQuery UI checkboxes.
+•	Convert the drop down menu into a jQuery UI selectmenu. 
+•	Convert the submit button into a jQuery UI button. When the user clicks submit, display a jQuery UI dialog box that thanks the user for their inquiry…then process the submission.
+-->
+
+    
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html" title="This is main page of site">Home</a></li>
+				<li><a href="aboutus.html" title="Check our experienced team">About Us</a></li>
+				<li><a href="solutions.html" title="We have solutions for every situation">Solutions</a></li>
+				<li><a href="support.html" title="Our support team works with you to get things done">Support</a></li>
+				<li><a href="contactus.html" title="Contact us for more info">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="five columns">
+			<h4>Welcome</h4>
+
+			<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+		</section>
+		
+        
+      
+		<section id="solutions" class="six columns">
+			<h4>Our Solutions</h4> 
+			
+<!-- INSERT TABS HERE -->
+        <div id="tabs">
+          <ul>
+            <li id="tabheader"><a href="#tabs-1">vProspect 2.0</a></li>
+            <li id="tabheader"><a href="#tabs-2">vConvert 2.0</a></li>
+            <li id="tabheader"><a href="#tabs-3">vRetain 1.0</a></li>
+          </ul>
+          <div id="tabs-1">
+            <img src="images/logo_vprospect.gif" alt="vprospect-logo">
+			<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
+          </div>
+          <div id="tabs-2">
+            <img src="images/logo_vconvert.gif" alt="vconvert-logo">
+			<p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
+          </div>
+          <div id="tabs-3">
+            <img src="images/logo_vretain.gif" alt="vretain-logo">
+			<p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+          </div>
+        </div>
+<!--End Tabs Code-->
+            
+		</section>
+		
+        
+       
+		<section id="testimonials" class="five columns">
+			<h4>Client Testimonials</h4>
+
+<!-- INSERT ACCORDION HERE -->
+<div id="accordion">
+  <h3>Client 1</h3>
+    <div>
+            <p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.
+            <br>
+            <br>
+            Iona Ford<br>
+            President<br>
+            Chevy Dealers Association</p>
+      </div>
+      <h3>Client 2</h3>
+      <div>
+            <p>Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.
+            <br><br>
+            Robin Banks<br>
+            CEO<br>
+            Profits Financial, Inc.</p>
+        </div>
+        <h3>Client 3</h3>
+      <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            <br><br>
+            Chase Banks<br>
+            CEO<br>
+            Profits Financial, Inc.</p>
+        
+        </div>
+    <h3>Client 4</h3>
+      <div>
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+            <br><br>
+            Ford Auto<br>
+            CEO<br>
+            Car Industry, Inc.</p>
+             <ul>
+                  <li>Point one</li>
+                  <li>Point two</li>
+                  <li>Point three</li>
+            `</ul>
+        </div>
+    </div>
+  
+  
+<!--End Accordian Code-->
+                
+		</section>
+	</main>
+    <script>
+    
+//   General
+
+$(document).ready(function(){
+    $(document).tooltip();     
+}); 
+        
+//   Home Page
+        
+$(document).ready(function(){
+   $("#tabs").tabs();     
+});        
+
+//3.Add the jQuery UI Accordion widget to the home page to divide up the 2 client testimonials.
+        
+$(document).ready(function(){
+   $( "#accordion" ).accordion();    
+}); 
+                
+//About Us
+
+$(document).ready(function(){
+   $("#tabs_mgrs").tabs();     
+}); 
+               
+
+      
+//End of assignment 9.
+    
+    </script>
+</body>
+</html>
